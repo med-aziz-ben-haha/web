@@ -1,0 +1,93 @@
+.image
+{
+width: 100%;
+height: auto;
+z-index: -1;
+
+}
+
+.pic_text
+{
+color: white;
+font-size: 50px;
+margin-left: 30px;
+font-weight: bolder;
+z-index: 1;
+margin-top: -200px;
+margin-bottom: 200px;
+}
+
+h1{
+color: black;
+font-size: 40px;
+font-weight: bold;
+margin-left: 30px;
+
+}
+
+.title1
+{
+    color: black;
+font-size: 30px;
+font-weight: bold;
+margin-left: 20px;
+}
+
+.title2
+{
+    color: white;
+font-size: 30px;
+font-weight: bold;
+margin-left: 20px;
+}
+
+.pragraph1
+{
+    color: black;
+    font-size: 15px;
+    font-weight: normal;
+    text-align: justify;
+    margin-left: 20px;
+}
+
+.pragraph2
+{
+    color: white;
+    font-size: 15px;
+    font-weight: normal;
+    text-align: justify;
+    margin-left: 20px;
+}
+
+
+
+.box1
+{ display: inline-block;
+    width : 45%;
+    height : auto;
+    border: 10px solid bisque;
+    margin: 10px;
+    background-color: bisque;
+    padding: 10px 10px;
+}
+.box2
+{ width : 45%; 
+    display: inline-block;
+    height : auto;
+    border: 10px solid black;
+    margin: 10px;
+    background-color: black;
+    padding: 10px 10px;
+}
+.box1:hover
+{
+    border: 10px solid black;
+    margin: 1px;
+    background-color: bisque;
+}
+.box2:hover
+{
+    border: 10px solid bisque;
+    margin: 10px;
+    background-color: black;
+}

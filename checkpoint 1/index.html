@@ -1,27 +1,12 @@
 <!DOCTYPE HTML>
 
-<!-- basic text
-
-<b>...</b>	Bold
-<i>...</i>	Italics
-<u>...</u>	Underline
-<s>...</s>	Strike-through
-<small>...</small> smaller text
-<tt>...</tt>	Teletype
-<sup>...</sup>	Superscript (power)
-<sub>...</sub>	Subscript (indice comme h2o)
-
-<br>  breaks a line
-<p> ... </p>  paragraph (automatically breaks a line between paragraphs)
-
--->
-
 <html lang="langage">
 
 <head>
-
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
 <title> SIMPLE APPS . COM </title>
 <link rel=" icon " href=" res/logo.png"  > 
+<link rel="  stylesheet " href="styles.css"  > 
 
 </head>
 
@@ -30,22 +15,24 @@
         <center>
                 <img src="res/welcome.png" width=" 700 " height=" 200 " alt=" welcome image " >
             </center>
-            <a style="float: right;" href="register.html"> SING UP </a>  <br>
-
-        <ul>
-                <li> <a href=" index.html "> <u>HOME</u> </a> </li> 
-                <li> <a href=" products.html "> <u>PRODUCTS</u> </a> </li> 
-                <li> <a href=" contact.html "> <u>CONTACT US</u> </a> </li> 
-        </ul>
+         
+        <div class="center">
+                <div class="nav_bar_top">
+                <a href=" index.html "  class="active">HOME</a>
+                <a href=" products.html " >PRODUCTS</a>
+                <a href=" contact.html ">CONTACT US</a>
+                </div>
+              </div>
+              <a  href="register.html" class="right"> SING UP </a>  <br>
 
                 <h1> <b> ABOUT US </b> </h1>
 
-
-        <video width="1000" height="400" controls autoplay>
+<div class="videos" >
+        <video  width="1000" height="400"  controls autoplay>
             <source src=" res/intro.mp4 " type="video/mp4" >
         </video>
-        
-    <p title=" About us "> We create an all-round experience for your business, across different channels. We design pixel-perfect mobile apps and implement successful digital marketing campaigns across mobile, web and social media. We specialize in brand development for businesses, e-commerces and consumer products. Our vision is to shape ideas into great value for our clients. Our goal is to help brands be relevant in the digital era and drive meaningful stories that will convert users into your most loyal customers. </p>
+    </div>  
+    <p title=" About us " class="commentary_paragraph"> We create an all-round experience for your business, across different channels. We design pixel-perfect mobile apps and implement successful digital marketing campaigns across mobile, web and social media. We specialize in brand development for businesses, e-commerces and consumer products. Our vision is to shape ideas into great value for our clients. Our goal is to help brands be relevant in the digital era and drive meaningful stories that will convert users into your most loyal customers. </p>
    
 </body>
 

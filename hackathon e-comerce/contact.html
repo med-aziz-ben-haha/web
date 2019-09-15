@@ -1,0 +1,154 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+
+  <title>Contact</title>
+  <link rel="icon" href="res/logo.png">
+  <link rel="stylesheet" href="css/style.css">
+  <script src="https://kit.fontawesome.com/6c4469dd80.js"></script>
+  <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/css/bootstrap.min.css"
+    integrity="sha384-ggOyR0iXCbMQv3Xipma34MD+dH/1fQ784/j6cY/iJTQUOhcWr7x9JvoRxT2MZw1T" crossorigin="anonymous">
+  <script src="https://code.jquery.com/jquery-3.3.1.slim.min.js"
+    integrity="sha384-q8i/X+965DzO0rT7abK41JStQIAqVgRVzpbzo5smXKp4YfRvH+8abtTE1Pi6jizo"
+    crossorigin="anonymous"></script>
+  <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.14.7/umd/popper.min.js"
+    integrity="sha384-UO2eT0CpHqdSJQ6hJty5KVphtPhzWj9WO1clHTMGa3JDZwrnQq4sF86dIHNDz0W1"
+    crossorigin="anonymous"></script>
+  <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/js/bootstrap.min.js"
+    integrity="sha384-JjSmVgyd0p3pXB1rRibZUAYoIIy6OrQ6VrjIEaFf/nJGzIxFDsf4x0xIM+B07jRM"
+    crossorigin="anonymous"></script>
+
+</head>
+
+<body>
+  <nav class="navbar navbar-expand-lg navbar-dark  " style="background-color: #307a79;">
+    <a class="navbar-brand" href="#"><img style="height:50px; width:100px;" src="res/logo.png"></a>
+    <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarSupportedContent"
+      aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
+      <span class="navbar-toggler-icon"></span>
+    </button>
+    <div class="collapse navbar-collapse" id="navbarSupportedContent">
+      <ul class="navbar-nav mr-auto">
+        <li class="nav-item ">
+          <a class="nav-link border-right" href="Home.html">Accueil <span class="sr-only">(current)</span></a>
+        </li>
+        <li class="nav-item active">
+          <a class="nav-link border-right" href="contact.html">Contact <span class="sr-only">(current)</span></a>
+        </li>
+
+        <li class="nav-item block">
+          <a class="nav-link" href="panier.html"><i class="fas fa-shopping-cart"></i> Panier<span
+              class="sr-only">(current)</span></a>
+        </li>
+      </ul>
+      <form class="form-inline my-2 my-lg-0 ">
+        <input class="form-control mr-sm-2" type="search" placeholder="Search" aria-label="Search"
+          style="background-color: white">
+        <button class="btn btn-outline-success my-2 my-sm-0" type="submit">Search</button>
+      </form>
+    </div>
+  </nav>
+
+
+  <div class="text-center padding1 form1 " id="contactForm">
+    <form class="Contact">
+      <div class="form-group">
+        <div class="col-sm-12 col-lg-12">
+          <label class="formulaire">Name: </label>
+          <br>
+          <input type="text" class="form-control-sm" placeholder="Write your name" id="name"required onkeydown="checkAlpha(this)"
+            onkeyup="checkAlpha(this)">
+          <br>
+          <label class="formulaire"> Email: </label>
+          <br>
+          <input type="text" class="form-control-sm" required placeholder="name@example.com" id="courriel">
+          <br>
+          <label class="formulaire"> Phone number : </label>
+          <br>
+          <input type="text" class="form-control-sm"id="phoneNumber" placeholder="Your Phone Number" onkeydown="checkNum(this)"
+            onkeyup="checkNum(this)">
+          <br>
+        </div>
+      </div>
+
+      <div class="form-group">
+        <div class="col-sm-12 col-lg-12">
+          <h3> Message</h3>
+          <button type="button" class="btn btn-outline-light" onclick="myBold()">B</button>
+          <button type="button" class="btn btn-outline-light" onclick="myItalic()">I</button>
+          <button type="button" class="btn btn-outline-light" onclick="myUnderline()">Underline</button>
+          <label> </label>
+          <select class="btn btn-outline-light" onclick="myPX()" id="selectPX">
+            <option value="20px">20px</option>
+            <option value="30px">30px</option>
+            <option value="40px">40px</option>
+          </select>
+          <label> </label>
+          <select class="btn btn-outline-light" onclick="myFontFamily()" id="selectFont">
+            <option value="Arial"> Arial </option>
+            <option value="Verdana"> Verdana</option>
+            <option value="Geneva">Geneva</option>
+          </select>
+          <br>
+          <br>
+          <textarea class="btn btn-outline-light padding1" id="Mytext" cols="40" rows="5"></textarea>
+          <br>
+          <br>
+          <input class="submit btn btn-outline-light" type="submit" value="submit">
+        </div>
+      </div>
+    </form>
+  </div>
+
+  <div class="footer">
+    <div class="container">
+      <div class="row ">
+        <div class=" col-sm-3 col-lg-3 footer1">
+          <img src="res/time.png" class="footerImg">
+          <h6 class="white">LIVRAISON RAPIDE</h6>
+          <p class="white"> En 48 à 72 H dans toute la Tunisie</p>
+        </div>
+        <div class=" col-sm-3 col-lg-3 footer1">
+          <img src="res/livraison.png" class="footerImg">
+          <h6 class="white">LIVRAISON GRATUITE</h6>
+          <p class="white"> Dès 130 DT d'achat dans toute la Tunisie</p>
+        </div>
+        <div class=" col-sm-3 col-lg-3 footer1">
+          <img src="res/money.png" class="footerImg">
+          <h6 class="white">PAIEMENT 100% SÉCURISÉ</h6>
+          <p class="white"> Paiement à la livraison</p>
+        </div>
+        <div class=" col-sm-3 col-lg-3 footer1">
+          <img src="res/client.png" class="footerImg">
+          <h6 class="white">SERVICE CLIENT</h6>
+          <p class="white"> 7J/7 par email ou 6J/7 par téléphone de 09h:00 à 20h:00</p>
+        </div>
+
+      </div>
+
+      <div class="row ">
+        <div class="col-sm-4 col-lg-4">
+          <img src="res/tel.png" class="footerImg">
+          <h6 class="white">+216 98 744 600</h6>
+        </div>
+        <div class="col-sm-4 col-lg-4">
+          <img src="res/adresse.png" class="footerImg">
+          <h6 class="white">RIADH LANDALOS, ARIANA</h6>
+        </div>
+        <div class="col-sm-4 col-lg-4">
+          <img src="res/facebook.png" class="footerImg right">
+        </div>
+      </div>
+    </div>
+
+  </div>
+
+
+</body>
+<script src="https://www.gstatic.com/firebasejs/6.2.4/firebase-app.js"></script>
+<script src="https://www.gstatic.com/firebasejs/6.2.4/firebase-auth.js"></script>
+<script src="https://www.gstatic.com/firebasejs/6.2.4/firebase-database.js"></script>
+<script src="js/main.js"></script>
+
+</html>
